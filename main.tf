@@ -1,4 +1,4 @@
-# bootstrap/main.tf backend configuration
+# bootstrap/main.tf backend
 
 provider "aws" {
   region = "var.aws_region"
