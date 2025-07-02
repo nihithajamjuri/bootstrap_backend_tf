@@ -9,7 +9,7 @@ variable "aws_region" {
 }
 
 resource "aws_s3_bucket" "tf_state" {
-  bucket = "my-terraform-state-bucket"
+  bucket = "nihi9-terraform-state-bucket"
   acl    = "private"
   region = "ca-central-1"
   versioning {
