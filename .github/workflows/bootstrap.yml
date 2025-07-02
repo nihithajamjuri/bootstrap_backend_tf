@@ -27,13 +27,10 @@ jobs:
           aws-region: ca-central-1
 
       - name: Terraform Init
-        working-directory: ./bootstrap
         run: terraform init
 
-      - name: Terraform Plan
-        working-directory: ./bootstrap
+      - name: Terraform Plan     
         run: terraform plan
 
       - name: Terraform Apply (auto-approve)
-        working-directory: ./bootstrap
         run: terraform apply -auto-approve
